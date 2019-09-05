@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const db = require('./data/db.js')
 const server = express();
@@ -9,5 +10,5 @@ server.use('/api/posts', blogsRouter)
 
 
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 server.listen(port, () => console.log('\napi running\n'));

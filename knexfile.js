@@ -16,7 +16,7 @@ module.exports = {
   },
 };
 module.exports = {
-  production: {
+  production  : {
     client: 'sqlite3',
     connection: { filename: './data/lambda.db3' },
     useNullAsDefault: true,
