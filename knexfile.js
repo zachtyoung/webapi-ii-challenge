@@ -14,9 +14,7 @@ module.exports = {
     },
     seeds: { directory: './data/seeds' },
   },
-};
-module.exports = {
-  production  : {
+  production: {
     client: 'sqlite3',
     connection: { filename: './data/lambda.db3' },
     useNullAsDefault: true,
@@ -32,3 +30,4 @@ module.exports = {
     seeds: { directory: './data/seeds' },
   },
 };
+
